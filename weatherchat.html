@@ -4,86 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="weatherchart.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="header">
-        <h1>My Weather App</h1>
+<body class="bg-gradient-to-b from-blue-600 to-cyan-400 text-white text-center font-sans">
+    
+    <!-- Navbar -->
+    <div class="bg-black bg-opacity-80 py-4 text-2xl font-bold">
+        My Weather App
     </div>
-    <div class="container">
-        <h1>Weather App</h1>
-        <input type="text" id="locationInput" placeholder="Enter a city">
-        <button id="searchButton">Search</button>
-        <div class="weather-info">
-            <h2 id="location"></h2>
-            <p id="temperature"></p>
-            <p id="description"></p>
+    
+    <!-- Main Container -->
+    <div class="bg-white bg-opacity-20 p-8 rounded-lg shadow-lg mt-12 w-1/2 mx-auto">
+        <h1 class="text-3xl font-bold mb-4">Weather App</h1>
+        <input type="text" id="locationInput" placeholder="Enter a city" 
+            class="px-4 py-2 w-3/4 rounded-md border-none text-black">
+        <button id="searchButton" class="px-6 py-2 bg-red-500 hover:bg-red-600 text-white font-bold rounded-md mt-4">
+            Search
+        </button>
+        
+        <!-- Weather Info -->
+        <div class="weather-info mt-6">
+            <h2 id="location" class="text-2xl font-semibold"></h2>
+            <p id="temperature" class="text-xl"></p>
+            <p id="description" class="text-lg"></p>
+            <p id="humidity" class="text-lg"></p>
+            <p id="wind" class="text-lg"></p>
+            <p id="pressure" class="text-lg"></p>
         </div>
     </div>
-    <script src="script.js"></script>
+    
+    <script type="module" src="weatherchart.js"></script>
+    
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-80 py-4 text-white fixed bottom-0 w-full mt-6">
+        <p>Copyright &copy; 2024</p>
+    </footer>
 </body>
-<footer>
-    <p>Copyright © 2024</p>
-</footer> 
-<style>
-   body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-}
-
-.header {
-    color: crimson;
-    font-size: 1500px;
-    font-family: Arial;
-    font-style: italic;
-    justify-content: center;
-    margin-top: 50px;
-    padding-left: 600px;
-}
-
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(23, 157, 247);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(145, 141, 141, 0.3); 
-    margin-top: 105px;
-}
-
-h1 {
-    font-size: 24px;
-}
-
-input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #9dff00;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.weather-info {
-    margin-top: 20px;
-}
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    font-family: Arial;
-}
-</style>
-<script src="weatherchart.js"></script>
 </html>
