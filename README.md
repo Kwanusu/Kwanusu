@@ -25,8 +25,8 @@ I'm a **Fullstack Software Engineer** passionate about building scalable web app
 
 ## 📫 How to Reach Me
 - 📧 Email: [kwanusujoseph@gmail.com]
-- 💼 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/Kwanusu)
-- 🐙 GitHub: [Your GitHub Profile](https://github.com/Kwanusu)
+- 💼 LinkedIn: [https://www.linkedin.com/in/joseph-kwanusu-009576b7]
+- 🐙 GitHub: [https://github.com/Kwanusu]
 
 ## 🌱 Fun Facts
 - I love solving algorithmic challenges and exploring new tech frameworks.
